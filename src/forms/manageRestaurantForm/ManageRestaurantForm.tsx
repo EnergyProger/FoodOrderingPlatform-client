@@ -10,8 +10,8 @@ import MenuSection from "./MenuSection";
 import ImageSection from "./ImageSection";
 import LoadingButton from "@/components/LoadingButton";
 import { Button } from "@/components/ui/button";
-import { CURRENCY_SMALLEST_UNIT } from "@/api/common/constants";
 import { Restaurant } from "@/types";
+import { CURRENCY_SMALLEST_UNIT } from "@/common/constants";
 
 const formSchema = z
   .object({
