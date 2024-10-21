@@ -24,15 +24,10 @@ export const useGetMyRestaurant = () => {
     return response.json();
   };
 
-  const {
-    data: restaurant,
-    isLoading,
-    error,
-  } = useQuery("fetchMyRestaurant", getMyRestaurantRequest);
-
-  if (error) {
-    toast.error(error.toString());
-  }
+  const { data: restaurant, isLoading } = useQuery(
+    "fetchMyRestaurant",
+    getMyRestaurantRequest
+  );
 
   return { restaurant, isLoading };
 };

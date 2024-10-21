@@ -1,0 +1,26 @@
+import { FC } from "react";
+import { Link } from "react-router-dom";
+
+interface Props {
+  total: number;
+  city: string;
+}
+
+const SearchResultInfo: FC<Props> = ({ total, city }) => {
+  return (
+    <div className="text-xl font-bold flex flex-col gap-3 justify-between lg:items-center lg:flex-row">
+      <span>
+        {total} Restaurants found in {city}
+        <Link
+          to="/"
+          className="ml-1 text-sm font-semibold underline cursor-pointer text-blue-500"
+        >
+          Change Location
+        </Link>
+      </span>
+      Insert dropdown here
+    </div>
+  );
+};
+
+export default SearchResultInfo;
