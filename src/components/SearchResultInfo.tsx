@@ -18,7 +18,6 @@ const SearchResultInfo: FC<Props> = ({ total, city }) => {
           Change Location
         </Link>
       </span>
-      Insert dropdown here
     </div>
   );
 };
