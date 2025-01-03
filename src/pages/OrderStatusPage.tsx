@@ -15,7 +15,7 @@ const OrderStatusPage = () => {
   return (
     <div className="space-y-10">
       {orders.map((order) => (
-        <OrderStatusCard order={order} />
+        <OrderStatusCard order={order} key={order._id} />
       ))}
     </div>
   );

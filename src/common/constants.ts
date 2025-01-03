@@ -1,5 +1,6 @@
 export const CURRENCY_SMALLEST_UNIT = 100;
 export const SHOW_NUMBER_OF_CUISINES_FILTER = 7;
+export const REFRESH_CHECK_ORDER_STATUS = 5000;
 export const SORT_OPTIONS = [
   {
     label: "Best match",
